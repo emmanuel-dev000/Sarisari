@@ -1,5 +1,5 @@
 # sarisari
- Updated version of my ecommerce webapp in internship using Laravel and MySQL.
+ Updated version of my ecommerce webapp in internship using PHP, MySQL, and Laravel.
  
  Credits:
  
