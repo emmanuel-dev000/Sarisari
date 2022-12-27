@@ -1,4 +1,4 @@
-# Sarisari
+# sarisari
  Updated version of my ecommerce webapp in internship using Laravel and MySQL.
  
  Credits:
