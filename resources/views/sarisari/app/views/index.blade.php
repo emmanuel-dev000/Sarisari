@@ -1,1 +1,1 @@
-@extends('layouts.layout')
+@extends('sarisari.app.layout.layout')
