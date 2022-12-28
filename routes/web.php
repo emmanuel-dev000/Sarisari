@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ViewController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,8 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+// View
+    Route::get('/sarisari', [ViewController::class, 'showIndex']);
+    Route::get('/sarisari/about', [ViewController::class, 'showAbout']);
+    Route::get('/sarisari/contacts', [ViewController::class, 'showContacts']);
