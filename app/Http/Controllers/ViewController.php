@@ -22,9 +22,9 @@ class ViewController extends Controller
         return view('sarisari.app.views.contacts');
     }
 
-    public function showProducts()
+    public function showProductsSummary()
     {
-        return view('');
+        return view('sarisari.app.views.products-summary');
     }
 
 }
