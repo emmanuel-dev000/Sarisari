@@ -45,12 +45,12 @@ https://templatemo.com/tm-546-sixteen-clothing
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home
+                <a class="nav-link" href="{{ url('/sarisari') }}">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="products.html">Our Products</a>
+                <a class="nav-link" href="{{ url('/products-summary') }}">Our Products</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{{ url('/sarisari/about') }}">About Us</a>
