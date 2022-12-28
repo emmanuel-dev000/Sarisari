@@ -1,5 +1,5 @@
 # sarisari
-Ecommerce webapp learned during internship using PHP, MySQL, and Laravel.
+An ecommerce webapp using PHP, MySQL, and Laravel.
  
  Credits:
  
