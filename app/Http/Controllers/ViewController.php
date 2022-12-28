@@ -9,17 +9,22 @@ class ViewController extends Controller
     
     public function showIndex()
     {
-        return view('sarisari.app.index');
+        return view('sarisari.app.views.index');
     }
 
     public function showAbout()
     {
-        return view('sarisari.app.about');
+        return view('sarisari.app.views.about');
     }
 
     public function showContacts()
     {
-        return view('sarisari.app.contacts');
+        return view('sarisari.app.views.contacts');
+    }
+
+    public function showProducts()
+    {
+        return view('');
     }
 
 }
