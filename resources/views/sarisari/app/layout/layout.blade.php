@@ -15,7 +15,6 @@
     <title>@yield('subtitle') - {{ config('app.name') }}</title>
 
     <!-- Bootstrap core CSS -->
-    {{-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> --}}
     <link href="{{ asset('layouts/sixteen-clothing/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 <!--
 
@@ -280,16 +279,16 @@ https://templatemo.com/tm-546-sixteen-clothing
 
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ assets('layouts/sixteen-clothing/vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ assets('layouts/sixteen-clothing/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
 
     <!-- Additional Scripts -->
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/owl.js"></script>
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/isotope.js"></script>
-    <script src="assets/js/accordions.js"></script>
+    <script src="{{ assets('layouts/sixteen-clothing/assets/js/custom.js') }}"></script>
+    <script src="{{ assets('layouts/sixteen-clothing/assets/js/owl.js') }}"></script>
+    <script src="{{ assets('layouts/sixteen-clothing/assets/js/slick.js') }}"></script>
+    <script src="{{ assets('layouts/sixteen-clothing/assets/js/isotope.js') }}"></script>
+    <script src="{{ assets('layouts/sixteen-clothing/assets/js/accordions.js') }}"></script>
 
 
     <script language = "text/Javascript"> 
