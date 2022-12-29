@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ViewController;
+use App\Http\Controllers\ProductDisplayController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,8 +29,11 @@ Route::middleware([
     })->name('dashboard');
 });
 
-// Views
+# Views
     Route::get('/sarisari', [ViewController::class, 'showIndex']);
     Route::get('/sarisari/about', [ViewController::class, 'showAbout']);
     Route::get('/sarisari/contacts', [ViewController::class, 'showContacts']);
     Route::get('/sarisari/products-summary', [ViewController::class, 'showProductsSummary']);
+
+# Products Display
+    Route::get('/sarisari/products/', [ProductDisplayController::class, 'showAllProducts']);
