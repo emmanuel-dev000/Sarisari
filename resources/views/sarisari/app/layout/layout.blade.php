@@ -49,7 +49,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                 </a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="{{ url('/products-summary') }}">Our Products</a>
+                <a class="nav-link" href="{{ url('/sarisari/categories') }}">Categories</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{{ url('/sarisari/about') }}">About Us</a>

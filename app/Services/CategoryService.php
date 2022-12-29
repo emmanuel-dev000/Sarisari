@@ -7,12 +7,12 @@ use App\Models\Category;
 class CategoryService
 {
 
-    public static function getAllProducts()
+    public static function getAllCategories()
     {
         return Category::all();
     }
 
-    public static function getProductById($id)
+    public static function getCategoryById($id)
     {
         return Category::find($id);
     }
