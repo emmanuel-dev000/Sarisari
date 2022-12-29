@@ -95,12 +95,12 @@ https://templatemo.com/tm-546-sixteen-clothing
           <div class="col-md-12">
             <div class="section-heading">
               <h2>Latest Products</h2>
-              <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
+              <a href="/sarisari/products">view all products <i class="fa fa-angle-right"></i></a>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/product_01.jpg" alt=""></a>
+              <a href="#"><img src="{{ asset('layouts/sixteen-clothing/assets/images/product_01.jpg') }}" alt=""></a>
               <div class="down-content">
                 <a href="#"><h4>Tittle goes here</h4></a>
                 <h6>$25.75</h6>
@@ -279,16 +279,16 @@ https://templatemo.com/tm-546-sixteen-clothing
 
 
     <!-- Bootstrap core JavaScript -->
-    <script src="{{ assets('layouts/sixteen-clothing/vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ assets('layouts/sixteen-clothing/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('layouts/sixteen-clothing/vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('layouts/sixteen-clothing/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
 
     <!-- Additional Scripts -->
-    <script src="{{ assets('layouts/sixteen-clothing/assets/js/custom.js') }}"></script>
-    <script src="{{ assets('layouts/sixteen-clothing/assets/js/owl.js') }}"></script>
-    <script src="{{ assets('layouts/sixteen-clothing/assets/js/slick.js') }}"></script>
-    <script src="{{ assets('layouts/sixteen-clothing/assets/js/isotope.js') }}"></script>
-    <script src="{{ assets('layouts/sixteen-clothing/assets/js/accordions.js') }}"></script>
+    <script src="{{ asset('layouts/sixteen-clothing/assets/js/custom.js') }}"></script>
+    <script src="{{ asset('layouts/sixteen-clothing/assets/js/owl.js') }}"></script>
+    <script src="{{ asset('layouts/sixteen-clothing/assets/js/slick.js') }}"></script>
+    <script src="{{ asset('layouts/sixteen-clothing/assets/js/isotope.js') }}"></script>
+    <script src="{{ asset('layouts/sixteen-clothing/assets/js/accordions.js') }}"></script>
 
 
     <script language = "text/Javascript"> 
