@@ -18,14 +18,16 @@ class ProductDisplayController extends Controller
     
     public function showProductById($id)
     {
-        $products = ProductService::getProductById($id);
+        $product = ProductService::getProductById($id);
         return view('sarisari.app.user.product.show-product')
                 ->with('product', $product);
     }
 
-    private function FunctionName(Type $var = null)
+    private function showProductByName($name)
     {
-        # code...
+        $product = ProductService::getProductByName($name);
+        return view('sarisari.app.user.product.show-product')
+                ->with('product', $product);
     }
 
 }

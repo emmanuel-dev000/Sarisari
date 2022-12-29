@@ -16,5 +16,11 @@ class ProductService
     {
         return Product::find($id);
     }
+    
+    public static function getProductByName($name)
+    {
+        return Product::all()
+            ->where('name', '=', $name);
+    }
 
 }
