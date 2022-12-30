@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Services\ProductService;
 use App\Services\CategoryService;
 
 class ViewController extends Controller
@@ -11,7 +12,9 @@ class ViewController extends Controller
     
     public function showIndex()
     {
-        return view('sarisari.app.views.index');
+        $products = ProductService::getAllProducts();
+        return view('sarisari.app.views.index')
+            ->with('products', $products);
     }
 
     public function showCategories()
