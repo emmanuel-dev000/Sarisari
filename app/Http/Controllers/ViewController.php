@@ -20,8 +20,10 @@ class ViewController extends Controller
     public function showProducts()
     {
         $products = ProductService::getAllProducts();
+        $categories = CategoryService::getAllCategories();
         return view('sarisari.app.views.products')
-            ->with('products', $products);
+            ->with('products', $products)
+            ->with('categories', $categories);
     }
     
     public function showAbout()
