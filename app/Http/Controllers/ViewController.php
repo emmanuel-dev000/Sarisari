@@ -16,12 +16,12 @@ class ViewController extends Controller
         return view('sarisari.app.views.index')
             ->with('products', $products);
     }
-
-    public function showCategories()
+    
+    public function showProducts()
     {
-        $categories = CategoryService::getAllCategories();
-        return view('sarisari.app.views.categories')
-            ->with('categories', $categories);
+        $products = ProductService::getAllProducts();
+        return view('sarisari.app.views.products')
+            ->with('products', $products);
     }
     
     public function showAbout()

@@ -13,7 +13,7 @@
             </a>
           </li> 
           <li class="nav-item">
-            <a class="nav-link" href="{{ url('/sarisari/categories') }}">Categories</a>
+            <a class="nav-link" href="{{ url('/sarisari/products') }}">Our Products</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ url('/sarisari/about') }}">About Us</a>
