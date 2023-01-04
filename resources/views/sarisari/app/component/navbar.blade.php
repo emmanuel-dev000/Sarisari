@@ -21,6 +21,11 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ url('/sarisari/contacts') }}">Contact Us</a>
           </li>
+          @if ( Auth::check() )
+            <li class="nav-item">
+              @include('sarisari.app.component.account-dropdown')
+            </li> 
+          @endif
         </ul>
       </div>
     </div>
