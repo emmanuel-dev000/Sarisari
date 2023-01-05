@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ViewController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,10 +24,10 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+    Route::get('/dashboard', [ViewController::class, 'showIndex']);
+    })->name('/sarisari');
+
+
 
 Route::group([], __DIR__.'\web\views-routes.php');
 Route::group([], __DIR__.'\web\products-display-routes.php');

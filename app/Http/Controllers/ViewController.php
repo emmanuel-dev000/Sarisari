@@ -35,5 +35,10 @@ class ViewController extends Controller
     {
         return view('sarisari.app.views.contacts');
     }
+    
+    public function showProfile()
+    {
+        return view('sarisari.app.views.profile');
+    }
 
 }
