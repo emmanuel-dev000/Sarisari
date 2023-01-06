@@ -31,3 +31,4 @@ Route::middleware([
 
 Route::group([], __DIR__.'\web\views-routes.php');
 Route::group([], __DIR__.'\web\products-display-routes.php');
+Route::group([], __DIR__.'\web\admin-views-routes.php');
