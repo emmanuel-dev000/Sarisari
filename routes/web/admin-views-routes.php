@@ -2,4 +2,4 @@
 
 use App\Http\Controllers\AdminViewController;
 
-Route::get('/sarisari/dashboard', [AdminViewController::class, 'showAdminDashboard']);
+Route::get('/sarisari/{userName}/dashboard', [AdminViewController::class, 'showAdminDashboard']);
