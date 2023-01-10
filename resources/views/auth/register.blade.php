@@ -15,6 +15,19 @@
             </div>
 
             <div class="mt-4">
+                <x-jet-label for="user_role" />
+                {{-- <x-jet-input id="user_role" class="block mt-1 w-full" type="text" name="user_role" :value="old('user_role')" required autofocus autocomplete="user_role" /> --}}
+                {{-- <select class="form-select block mt-1 w-full" name="user_role" :value="old('user_role')" required>
+                    <option value="User">User</option>
+                    <option value="Admin">Admin</option>
+                  </select> --}}
+                <select name="user_role" id="user_role" class="form-select block mt-1 w-full" aria-label="Default select example">
+                    <option value="User">User</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </div>
+
+            <div class="mt-4">
                 <x-jet-label for="email" value="{{ __('Email') }}" />
                 <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
             </div>
