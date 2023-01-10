@@ -9,6 +9,11 @@ use App\Services\CategoryService;
 
 class ViewController extends Controller
 {
+
+    public function redirectToIndex()
+    {
+        return redirect()->to(url('sarisari'));
+    }
     
     public function showIndex()
     {

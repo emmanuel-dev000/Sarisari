@@ -21,10 +21,16 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ url('/sarisari/contacts') }}">Contact Us</a>
           </li>
-          @if ( Auth::check() )
-            <li class="nav-item">
+          @if (Route::has('login'))
+            @auth
               @include('sarisari.app.component.account-dropdown')
-            </li> 
+            @else
+                <a href="{{ route('login') }}" class="nav-link">Log in</a>
+
+                @if (Route::has('register'))
+                    <a href="{{ route('register') }}" class="nav-link">Register</a>
+                @endif
+            @endauth
           @endif
         </ul>
       </div>

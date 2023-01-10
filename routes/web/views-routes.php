@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ViewController;
 
+Route::get('/', [ViewController::class, 'redirectToIndex']);
 Route::get('/sarisari', [ViewController::class, 'showIndex']);
 Route::get('/sarisari/products', [ViewController::class, 'showProducts']);
 Route::get('/sarisari/about', [ViewController::class, 'showAbout']);

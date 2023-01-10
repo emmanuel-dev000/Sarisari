@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ViewController;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -15,20 +13,7 @@ use App\Http\Controllers\ViewController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', [ViewController::class, 'showIndex']);
-    })->name('/sarisari');
-
-
-
+Route::group([], __DIR__.'\web\authentication-routes.php');
 Route::group([], __DIR__.'\web\views-routes.php');
 Route::group([], __DIR__.'\web\products-display-routes.php');
 Route::group([], __DIR__.'\web\admin-views-routes.php');
