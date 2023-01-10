@@ -11,14 +11,14 @@
             </form>
         </li>
     @else
-        <li class="nav-item">
-            <a href="{{ route('login') }}" class="nav-link">Log in</a>
-        </li>
-
         @if (Route::has('register'))
             <li class="nav-item">
                 <a href="{{ route('register') }}" class="nav-link">Register</a>
             </li>
         @endif
+        
+        <li class="nav-item">
+            <a href="{{ route('login') }}" class="nav-link">Log in</a>
+        </li>
     @endauth
 @endif
